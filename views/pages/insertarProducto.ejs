@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include('../secciones/head'); %>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <main>
+        <div class="container">
+            <%- include('../secciones/menu'); %>
+            <h1> Productos EJS</h1>
+            <!-- aqui va el contenido principal -->
+
+            <div class="row mt-5">
+                <div class="col-2"></div>
+                <div class="col-8">
+                   <form action="guardarProducto" method="post">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Inseratar productos</h2>
+                    </div>
+                    <div class="card-body">
+                       <input type="text" class="form-control"
+                       name="nombreProducto" id="nombreProducto"
+                       placeholder="Nombre del producto" />
+                       <br />
+                        <input type="text" class="form-control"
+                       name="marcaProducto" id="marcaProducto"
+                       placeholder="Marca del producto" />
+                       <br />
+                        <input type="text" class="form-control"
+                       name="precioProducto" id="precioProducto"
+                       placeholder="Precio del producto" />
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-secondary" href="/listarProductos">canselar</a>
+                        <button type="submit" class="btn btn-primary">Guardar Producto</button>
+                        
+                </div>
+                </form>
+
+            </div>
+
+
+
+        </div>
+    </main>
+    <footer class="footer mt-auto py-3 bg-light">
+        <%- include('../secciones/footer'); %>
+    </footer>
+</body>
+</html>

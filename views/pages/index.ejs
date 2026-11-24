@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include('../secciones/head'); %>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <main>
+        <div class="container">
+            <%- include('../secciones/menu'); %>
+            <h1 class="mt-3">Productos EJS</h1>
+            <p class="mt-3">Bienvenido al sistema de gestión de productos.</p>
+            <a href="/productos/listarProductos" class="btn btn-primary">Ver productos</a>
+            <a href="/productos/insertarProducto" class="btn btn-success">Insertar producto</a>
+        </div>
+    </main>
+    <footer class="footer mt-auto py-3 bg-light">
+        <%- include('../secciones/footer'); %>
+    </footer>
+</body>
+</html>
